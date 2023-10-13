@@ -1,0 +1,147 @@
+.sidebar-main-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  height: 100%;
+}
+.main-cls {
+  height: 100%;
+}
+
+.title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+.hospital-logo {
+  width: 100%;
+}
+
+.hospital-logo img {
+  margin: 10px 10px 10px 10px;
+  width: 85%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile .name {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.profile .role {
+  color: rgb(17, 237, 17);
+  margin-top: 0px;
+  font-size: 12px;
+  padding: 0;
+  font-weight: 600;
+}
+.profile img {
+  border: 2px solid rgb(249, 246, 246);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+/* Sidebar */
+.sidebar {
+  background: rgb(0, 7, 61);
+  color: white;
+
+  overflow-y: auto;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.logo {
+  font-size: 18px;
+  line-height: 0;
+}
+.bars {
+  width: 30px;
+  font-size: large;
+  cursor: pointer;
+}
+.hide {
+  display: none;
+}
+.routes {
+  margin-top: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  cursor: pointer;
+}
+.link {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: white;
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.link:hover {
+  background: rgb(45, 51, 89);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.active {
+  background: rgb(45, 51, 89);
+}
+.link_text {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  margin-left: 70px;
+}
+
+.menu {
+  display: flex;
+  color: white;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: flex-start;
+}
+.menu1 {
+  display: flex;
+  color: white;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  justify-content: flex-start;
+}
+.menu_item {
+  display: flex;
+  gap: 10px;
+}
+.menu_container {
+  display: flex;
+  font-size: 13px;
+  flex-direction: column;
+}
+.menu_container .link {
+  border-left: 2px solid #a99a9a;
+  padding-left: 20px;
+  margin-left: 50px;
+  background-color: red;
+}

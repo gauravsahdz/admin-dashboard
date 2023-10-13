@@ -1,0 +1,66 @@
+.dashboard {
+  width: 100%;
+  padding: 30px;
+  background-color: rgb(245, 246, 248);
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(63, 62, 62);
+  font-family: "Poppins", sans-serif;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.cardIcon {
+  font-size: 1.5rem;
+  margin-right: 5px;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+  padding: 30px;
+  border-radius: 50%;
+}
+.cardTitleText {
+  color: rgb(63, 62, 62);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+}
+.cardValue {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: block;
+}
+
+.cardGrowth {
+  display: flex; /* Use flex display to align children vertically */
+  align-items: center; /* Align children vertically in the center */
+}
+
+.negativeGrowth {
+  color: red;
+  margin-right: 5px; /* Add some right margin to separate the icon and value */
+}
+
+.positiveGrowth {
+  color: green;
+  margin-right: 5px; /* Add some right margin to separate the icon and value */
+}
+
+.growthValue {
+  font-weight: 400; /* Add font-weight to make the value stand out */
+}
