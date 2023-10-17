@@ -2,14 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   height: 100%;
-  font-family: "Poppins", sans-serif;
+
+
 }
 
 .main-container {
+
   display: flex;
+
   height: 100%;
+
+
 }
+
 .main-cls {
   height: 100%;
 }
@@ -20,128 +27,226 @@
   place-items: center;
 }
 
-.hospital-logo {
-  width: 100%;
-}
-
-.hospital-logo img {
-  margin: 10px 10px 10px 10px;
-  width: 85%;
-}
-
-.profile {
+.top_section {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+
+  justify-content: space-between;
+
+  width: 100% !important;
+}
+
+.logo {
+
+
+  line-height: 0;
+
+  padding: 0 !important;
+  margin: 0 !important;
+
+}
+
+.hospital-logo {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+  padding-top: 5px;
+  padding-left: 15px;
+  justify-content: flex-start;
   align-items: center;
 }
-.profile .name {
-  margin-bottom: 0;
-  font-size: 16px;
+
+.hospital-logo :first-child {
+
+  display: flex;
+  margin-right: 3px;
+}
+
+
+.profile-container {
+  width: 100%;
+  margin-top: 40%;
+}
+
+.profile-wrap {
+  display: flex;
+
+
+
+  padding: 5px;
+  background: rgb(45, 51, 89);
+  margin-left: 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-pic {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding-left: 5px;
+  padding-top: 3px;
+
+}
+
+.profile-pic img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  width: 100%;
+  justify-content: center;
+
+}
+
+.profile-details :first-child {
+  font-size: 13px;
   font-weight: bold;
-  margin-top: 5px;
-}
-.profile .role {
-  color: rgb(17, 237, 17);
-  margin-top: 0px;
-  font-size: 12px;
   padding: 0;
-  font-weight: 600;
+  margin: 0;
 }
-.profile img {
-  border: 2px solid rgb(249, 246, 246);
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+
+.profile-details :nth-child(2) {
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
 }
+
+
+
 /* Sidebar */
 .sidebar {
   background: rgb(0, 7, 61);
   color: white;
 
+
   overflow-y: auto;
 }
 
-.top_section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 10px;
-}
-.logo {
-  font-size: 18px;
-  line-height: 0;
-}
+
+
 .bars {
   width: 30px;
   font-size: large;
   cursor: pointer;
 }
+
 .hide {
   display: none;
 }
-.routes {
-  margin-top: 15px;
 
+
+.routes {
+  margin-top: 20px;
+
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
+
   flex-direction: column;
-  gap: 2px;
+  gap: 15px;
   cursor: pointer;
 }
+
 .link {
+
+  text-decoration: none;
   display: flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: 600;
   color: white;
   gap: 10px;
-  padding: 5px 10px;
-  border-right: 4px solid transparent;
+  padding: 8px 10px;
+
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
 
+
 .link:hover {
+  border-radius: 5px;
   background: rgb(45, 51, 89);
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
-.active {
+
+/* .active {
   background: rgb(45, 51, 89);
-}
+} */
 .link_text {
   display: flex;
   align-items: center;
   white-space: nowrap;
-  margin-left: 70px;
+}
+
+
+.icon {
+
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
 }
 
 .menu {
+
+  border-radius: 5px;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
   color: white;
-  padding: 5px 10px;
-  font-size: 13px;
-  font-weight: bold;
+  padding: 7px 10px;
+  font-size: 15px;
+  font-weight: 600;
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-  justify-content: flex-start;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
 }
-.menu1 {
-  display: flex;
-  color: white;
-  padding: 5px 10px;
-  font-size: 13px;
-  font-weight: bold;
-  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-  justify-content: flex-start;
+
+.menu:hover {
+  background-color: rgb(45, 51, 89);
 }
+
 .menu_item {
   display: flex;
   gap: 10px;
+
+  display: flex;
+  flex-direction: row;
+
+  width: 100% !important;
+
 }
+
 .menu_container {
   display: flex;
   font-size: 13px;
   flex-direction: column;
 }
+
 .menu_container .link {
-  border-left: 2px solid #a99a9a;
-  padding-left: 20px;
-  margin-left: 50px;
-  background-color: red;
+  padding-left: 10px;
+  /* margin: 3px; */
+  /* border-left: 2px solid #a99a9a; */
+  margin-left: 20px;
+  margin-top: -2px;
+}
+
+.tree-line {
+  height: 1.5px;
+  width: 18px;
+  /* background: #a99a9a; */
+  margin-left: 44px;
+  position: absolute;
+  top: 46%;
 }

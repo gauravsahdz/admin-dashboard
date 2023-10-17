@@ -1,4 +1,5 @@
 .dashboard {
+  border: 2px solid red;
   width: 100%;
   padding: 30px;
   background-color: rgb(245, 246, 248);
@@ -16,26 +17,34 @@
   font-family: "Poppins", sans-serif;
 }
 .card {
+  border: 1px solid red;
   display: flex;
+  width: 200px;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .cardIcon {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-right: 5px;
   margin-top: 10px;
   transition: all 0.5s ease;
   padding: 30px;
   border-radius: 50%;
 }
+
+.cardTitle{
+
+  width: 100% !important;
+}
 .cardTitleText {
   color: rgb(63, 62, 62);
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 
+  500;
   display: block;
 }
 .cardValue {
@@ -47,20 +56,65 @@
 }
 
 .cardGrowth {
+ width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
   display: flex; /* Use flex display to align children vertically */
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center; /* Align children vertically in the center */
+  font-size: 12px;
+  
 }
 
 .negativeGrowth {
+  font-size: 10px;
+  font-weight: bold !important;
   color: red;
-  margin-right: 5px; /* Add some right margin to separate the icon and value */
+   /* Add some right margin to separate the icon and value */
 }
 
 .positiveGrowth {
+  font-size: 10px;
+ 
   color: green;
-  margin-right: 5px; /* Add some right margin to separate the icon and value */
+  font-weight: bold !important;
+   /* Add some right margin to separate the icon and value */
 }
 
 .growthValue {
   font-weight: 400; /* Add font-weight to make the value stand out */
+}
+
+
+
+.dashboard-chart{
+  border: 2px solid red;
+  display: flex;
+}
+
+
+
+
+@media only screen and (max-width: 881px) {
+  .card {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row !important;
+
+    
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .card-main-warp{
+    border: 2px solid red;
+    display:  flex;
+    flex-direction: row !important;
+ width: 200px !important;
+
+
+  }
 }
