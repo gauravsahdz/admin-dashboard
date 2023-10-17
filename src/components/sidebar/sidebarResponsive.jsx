@@ -11,6 +11,8 @@ import InsightsOutlinedIcon from "@mui/icons-material/InsightsOutlined";
 import ContactSupportOutlinedIcon from "@mui/icons-material/ContactSupportOutlined";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import "./Sidebar.css";
+import { Close } from "@mui/icons-material";
+import { IconButton } from "@mui/material";
 
 const routes = [
   {
@@ -106,7 +108,11 @@ const routes = [
   },
 ];
 
-const SideBar = ({ children, isOpen }) => {
+const SideBarResponsive = ({
+  children,
+  isOpen,
+  toggleSidebar,
+}) => {
   const [prevMenuOpen, setPrevMenuOpen] = useState(null);
 
   const inputAnimation = {
@@ -143,6 +149,7 @@ const SideBar = ({ children, isOpen }) => {
     },
   };
 
+
   const handleMenuToggle = (route) => {
     if (prevMenuOpen === route) {
       setPrevMenuOpen(null); // If clicked menu is the same as the open menu, close it
@@ -157,11 +164,11 @@ const SideBar = ({ children, isOpen }) => {
   // };
 
   return (
-    <div className="sidebar-main-container">
+    <div className="sidebar-main-container-responsive">
       <div className="main-container">
         <motion.div
           animate={{
-            width: "100%",
+            width: isOpen ? "100%" : "0%",
 
             transition: {
               duration: 0.5,
@@ -186,6 +193,14 @@ const SideBar = ({ children, isOpen }) => {
                       <AddCircleOutlineIcon />
                     </p>{" "}
                     <p>Dashboard</p>
+                    <IconButton onClick={toggleSidebar}>
+                      <Close
+                        sx={{
+                          color: "#fff",
+                          fontSize: "1.5rem",
+                        }}
+                      />
+                    </IconButton>
                   </div>
                 </motion>
               )}
@@ -256,6 +271,4 @@ const SideBar = ({ children, isOpen }) => {
   );
 };
 
-
-
-export default SideBar;
+export default SideBarResponsive;

@@ -2,19 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   height: 100%;
+}
 
-
+.sidebar-main-container-responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
 }
 
 .main-container {
-
   display: flex;
 
   height: 100%;
-
-
 }
 
 .main-cls {
@@ -37,13 +39,10 @@
 }
 
 .logo {
-
-
   line-height: 0;
 
   padding: 0 !important;
   margin: 0 !important;
-
 }
 
 .hospital-logo {
@@ -59,11 +58,9 @@
 }
 
 .hospital-logo :first-child {
-
   display: flex;
   margin-right: 3px;
 }
-
 
 .profile-container {
   width: 100%;
@@ -72,8 +69,6 @@
 
 .profile-wrap {
   display: flex;
-
-
 
   padding: 5px;
   background: rgb(45, 51, 89);
@@ -89,7 +84,6 @@
   width: 30%;
   padding-left: 5px;
   padding-top: 3px;
-
 }
 
 .profile-pic img {
@@ -104,7 +98,6 @@
   margin-left: 5px;
   width: 100%;
   justify-content: center;
-
 }
 
 .profile-details :first-child {
@@ -120,18 +113,13 @@
   margin: 0;
 }
 
-
-
 /* Sidebar */
 .sidebar {
   background: rgb(0, 7, 61);
   color: white;
 
-
   overflow-y: auto;
 }
-
-
 
 .bars {
   width: 30px;
@@ -142,7 +130,6 @@
 .hide {
   display: none;
 }
-
 
 .routes {
   margin-top: 20px;
@@ -157,7 +144,6 @@
 }
 
 .link {
-
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -169,7 +155,6 @@
 
   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
 }
-
 
 .link:hover {
   border-radius: 5px;
@@ -186,18 +171,14 @@
   white-space: nowrap;
 }
 
-
 .icon {
-
   height: 100%;
   padding: 0;
   margin: 0;
   display: flex;
-
 }
 
 .menu {
-
   border-radius: 5px;
   display: flex;
   flex-direction: row;
@@ -225,7 +206,6 @@
   flex-direction: row;
 
   width: 100% !important;
-
 }
 
 .menu_container {
@@ -252,7 +232,7 @@
 }
 
 @media screen and (max-width: 768px) {
- .sidebar-main-container{
-  display: none !important;
- }
+  .sidebar-main-container {
+    display: none !important;
+  }
 }
