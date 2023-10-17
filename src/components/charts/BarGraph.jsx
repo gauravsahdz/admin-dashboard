@@ -27,12 +27,13 @@ const BarGraph = () => {
   );
 
   return (
-    <Grid item xs={12} md={8}>
+    <Grid item xs={10} md={7.5}>
       <Grid
         item
         xs={12}
         md={12}
         display="flex"
+      
         justifyContent="center"
         alignItems="center"
         flexDirection="column"
@@ -88,7 +89,7 @@ const BarGraph = () => {
         </Grid>
 
         <ChartContainer
-          width={700}
+          width={600}
           height={300}
           series={[{ data: uData, label: "uv", type: "bar" }]}
           xAxis={[{ scaleType: "band", data: xLabels }]}

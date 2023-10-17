@@ -69,9 +69,9 @@ const Dashboard = () => {
       {/* card components  start */}
       <Grid item xs={12}>
         {
-          <Grid container spacing={3}>
+          <Grid className="card-wrap" container spacing={3}>
             {cards.map((card, index) => (
-              <Grid item xs={12} md={3} key={index}>
+              <Grid className="card-main-warp" mt={3} md={3} key={index}>
                 <Card className="card">
                   <div
                     className="cardIcon"
@@ -87,9 +87,9 @@ const Dashboard = () => {
                     <div className="cardValue">{card.value}</div>
                     <div className="cardGrowth">
                       {card.growth.split("%")[0] < 10 ? (
-                        <ArrowDownwardOutlinedIcon className="negativeGrowth" />
+                        <ArrowDownwardOutlinedIcon fontSize="smaldl" fontWeight="bold" className="negativeGrowth" />
                       ) : (
-                        <ArrowUpwardOutlinedIcon className="positiveGrowth" />
+                        <ArrowUpwardOutlinedIcon fontSize="smalsl" fontWeight="bold" className="positiveGrowth" />
                       )}
                       <span
                         className={
@@ -102,7 +102,8 @@ const Dashboard = () => {
                       </span>
                       <span
                         style={{
-                          fontSize: "12px",
+                          fontSize: "10px",
+                          fontWeight:"600",
                         }}
                       >
                         this month
@@ -118,12 +119,12 @@ const Dashboard = () => {
       {/* card components end  */}
 
       <Grid item xs={12} md={12}>
-        <Grid container spacing={3}>
-          {/* Bar Graph */}
+        <div className="dashboard-chart" container spacing={3}>
+       
           <BarGraph />
-          {/* Pie Chart */}
+       
           <PieChartComponent />
-        </Grid>
+        </div>
       </Grid>
 
       {/* Product Sell table */}

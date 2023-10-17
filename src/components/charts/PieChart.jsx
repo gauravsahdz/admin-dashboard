@@ -34,13 +34,15 @@ const PieChartComponent = () => {
   }
 
   return (
-    <Grid item xs={12} md={4}>
+    <Grid item xs={12} md={4.9}>
       <Grid
         item
         xs={4}
         style={{
+          border:"2px solid blue",
           backgroundColor: "white",
           borderRadius: "2px",
+
           boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
           padding: "10px",
           width: "100%",

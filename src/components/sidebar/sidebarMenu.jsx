@@ -1,9 +1,9 @@
+
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
-import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
-import { BrowserRouter as NavLink } from "react-router-dom";
+// import { FaAngleDown } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
-
 const menuAnimation = {
   hidden: {
     opacity: 0,
@@ -20,7 +20,6 @@ const menuAnimation = {
     },
   },
 };
-
 const menuItemAnimation = {
   hidden: (i) => ({
     padding: 0,
@@ -41,6 +40,7 @@ const SidebarMenu = ({
   route,
   showAnimation,
   isOpen,
+  handleHeaderText,
   isMenuOpened,
   onMenuToggle,
 }) => {
@@ -48,6 +48,10 @@ const SidebarMenu = ({
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     onMenuToggle();
+  };
+
+  const onItemClick = (menuName, subMenuName) => {
+    handleHeaderText(menuName, subMenuName);
   };
 
   useEffect(() => {
@@ -84,12 +88,12 @@ const SidebarMenu = ({
                 : { rotate: 0 }
             }
           >
-            <KeyboardArrowDownOutlinedIcon />
+            {/* <FaAngleDown /> */}
           </motion.div>
         )}
       </div>{" "}
       <AnimatePresence>
-        {isMenuOpened && (
+        {isMenuOpened  && (
           <motion.div
             variants={menuAnimation}
             initial="hidden"
@@ -100,7 +104,11 @@ const SidebarMenu = ({
             {route.subRoutes.map((subRoute, i) => (
               <motion.div variants={menuItemAnimation} key={i} custom={i}>
                 <div className="tree-line"></div>
-                <NavLink to={subRoute.path} className="link">
+                <NavLink
+                  to={subRoute.path}
+                  className="link"
+                  onClick={() => onItemClick(route.name, subRoute.name)}
+                >
                   <div className="icon">{subRoute.icon}</div>
                   <motion.div className="link_text">{subRoute.name}</motion.div>
                 </NavLink>

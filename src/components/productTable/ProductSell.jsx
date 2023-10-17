@@ -61,12 +61,12 @@ const ProductSell = () => {
   return (
     <Card style={{ padding: "20px", width: "100%" }}>
       <Grid item xs={12}>
-        <Grid container spacing={3}>
-          <Grid item xs={6}>
+        <Grid className="product-sell-wrap" container spacing={0}>
+          <Grid className="product-wrap" >
             <h3>Product Sell</h3>
           </Grid>
-          <Grid item xs={6}>
-            <div style={{ display: "flex", justifyContent: "flex-end" }}>
+          <Grid className="search-main-wrap">
+            <div className="search-wrap" style={{ display: "flex", justifyContent: "space-around", marginTop:"10px" }}>
               <SearchBar size="small" width={200} />
               <TextField
                 select
