@@ -3,6 +3,7 @@
   padding: 30px;
   background-color: rgb(245, 246, 248);
 }
+
 .header {
   display: flex;
   flex-direction: row;
@@ -63,4 +64,16 @@
 
 .growthValue {
   font-weight: 400; /* Add font-weight to make the value stand out */
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    display: none !important;
+  }
+  .navbar {
+    display: block !important;
+  }
+  .headerTitle {
+    font-size: 1rem !important;
+  }
 }

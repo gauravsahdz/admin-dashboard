@@ -2,7 +2,7 @@ import React from "react";
 import { InputAdornment, TextField } from "@mui/material";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 
-const SearchBar = ({size, width}) => {
+const SearchBar = ({ size, width }) => {
   return (
     <div className="headerSearch">
       <TextField
@@ -16,10 +16,12 @@ const SearchBar = ({size, width}) => {
           ),
           style: {
             borderRadius: "30px", // Adjust the border radius as needed
-            width: width ? `${width}%` : "100%",
           },
         }}
         size={size}
+        style={{
+          width: width,
+        }}
       />
     </div>
   );

@@ -67,7 +67,7 @@ const ProductSell = () => {
           </Grid>
           <Grid item xs={6}>
             <div style={{ display: "flex", justifyContent: "flex-end" }}>
-              <SearchBar size="small" width={80} />
+              <SearchBar size="small" width={200} />
               <TextField
                 select
                 label="Last"

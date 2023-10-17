@@ -12,6 +12,7 @@ import ProductSell from "../productTable/ProductSell";
 import BarGraph from "../charts/BarGraph";
 import PieChartComponent from "../charts/PieChart";
 import SearchBar from "../searchbar/SearchBar";
+import Navbar from "../navbar/Navbar";
 
 const cards = [
   {
@@ -49,6 +50,7 @@ const cards = [
 ];
 
 const Dashboard = () => {
+ 
   return (
     <Grid container spacing={3} className="dashboard">
       {/* header start */}
