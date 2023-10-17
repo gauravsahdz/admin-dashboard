@@ -14,6 +14,7 @@ const Navbar = ({ toggleSidebar }) => {
           style={{
             backgroundColor: "white",
             color: "black",
+            zIndex: 1,
           }}
         >
           <IconButton

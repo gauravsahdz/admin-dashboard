@@ -40,7 +40,6 @@ const SidebarMenu = ({
   route,
   showAnimation,
   isOpen,
-  handleHeaderText,
   isMenuOpened,
   onMenuToggle,
 }) => {
@@ -48,10 +47,6 @@ const SidebarMenu = ({
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
     onMenuToggle();
-  };
-
-  const onItemClick = (menuName, subMenuName) => {
-    handleHeaderText(menuName, subMenuName);
   };
 
   useEffect(() => {
@@ -107,7 +102,6 @@ const SidebarMenu = ({
                 <NavLink
                   to={subRoute.path}
                   className="link"
-                  onClick={() => onItemClick(route.name, subRoute.name)}
                 >
                   <div className="icon">{subRoute.icon}</div>
                   <motion.div className="link_text">{subRoute.name}</motion.div>

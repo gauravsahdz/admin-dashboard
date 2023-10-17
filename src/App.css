@@ -10,9 +10,15 @@
 .navbar {
   display: none;
 }
+.responsiveSidebar {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   .navbar {
     display: block !important;
+  }
+  .responsiveSidebar {
+    display: block;
   }
 }
