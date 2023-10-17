@@ -12,6 +12,7 @@ import ProductSell from "../productTable/ProductSell";
 import BarGraph from "../charts/BarGraph";
 import PieChartComponent from "../charts/PieChart";
 import SearchBar from "../searchbar/SearchBar";
+import Navbar from "../navbar/Navbar";
 
 const cards = [
   {
@@ -49,6 +50,7 @@ const cards = [
 ];
 
 const Dashboard = () => {
+ 
   return (
     <Grid container spacing={3} className="dashboard">
       {/* header start */}
@@ -67,9 +69,9 @@ const Dashboard = () => {
       {/* card components  start */}
       <Grid item xs={12}>
         {
-          <Grid  container spacing={3}>
+          <Grid className="card-wrap" container spacing={3}>
             {cards.map((card, index) => (
-              <Grid className="card-main-warp" item xs={12} md={3} key={index}>
+              <Grid className="card-main-warp" mt={3} md={3} key={index}>
                 <Card className="card">
                   <div
                     className="cardIcon"
