@@ -258,7 +258,7 @@ const SideBarResponsive = ({
               </div>
 
               <div className="profile-details">
-                <p>Kuwar Jha</p>
+                <p>Gaurav sah</p>
                 <p>Project Manager</p>
               </div>
             </div>

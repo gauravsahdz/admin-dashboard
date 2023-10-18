@@ -243,7 +243,7 @@ const SideBar = ({ children, isOpen }) => {
               </div>
 
               <div className="profile-details">
-                <p>Kuwar Jha</p>
+                <p>Gaurav Sah</p>
                 <p>Project Manager</p>
               </div>
             </div>
