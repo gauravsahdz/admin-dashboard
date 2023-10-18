@@ -141,8 +141,8 @@ const ProductSell = () => {
                       {row.product.description}
                     </div>
                   </TableCell>
-                  <TableCell align="right">{row.stock}</TableCell>
-                  <TableCell align="right">{row.price}</TableCell>
+                  <TableCell align="right">{row.stock} in stock</TableCell>
+                  <TableCell align="right">${row.price}</TableCell>
                   <TableCell align="right">{row.sales}</TableCell>
                 </TableRow>
               ))}

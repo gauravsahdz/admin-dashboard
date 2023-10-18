@@ -1,5 +1,4 @@
 .dashboard {
-  border: 2px solid red;
   width: 100%;
   padding: 30px;
   background-color: rgb(245, 246, 248);
@@ -18,9 +17,8 @@
   font-family: "Poppins", sans-serif;
 }
 .card {
- 
   display: flex;
- width: 220px;
+  width: 220px;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -36,16 +34,14 @@
   border-radius: 50%;
 }
 
-.cardTitle{
-
+.cardTitle {
   width: 100% !important;
 }
 .cardTitleText {
   color: rgb(63, 62, 62);
   text-decoration: none;
   font-size: 12px;
-  font-weight: 
-  500;
+  font-weight: 500;
   display: block;
 }
 .cardValue {
@@ -57,7 +53,7 @@
 }
 
 .cardGrowth {
- width: 100% !important;
+  width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
   display: flex; /* Use flex display to align children vertically */
@@ -65,50 +61,41 @@
   justify-content: space-evenly;
   align-items: center; /* Align children vertically in the center */
   font-size: 12px;
-  
 }
 
 .negativeGrowth {
   font-size: 10px;
   font-weight: bold !important;
   color: red;
-   /* Add some right margin to separate the icon and value */
+  /* Add some right margin to separate the icon and value */
 }
 
 .positiveGrowth {
   font-size: 10px;
- 
+
   color: green;
   font-weight: bold !important;
-   /* Add some right margin to separate the icon and value */
+  /* Add some right margin to separate the icon and value */
 }
 
 .growthValue {
   font-weight: 400; /* Add font-weight to make the value stand out */
 }
 
-
-
-
-.product-sell-wrap{
-  
+.product-sell-wrap {
 }
 
-.product-wrap{
+.product-wrap {
   width: 60%;
 }
 
-.search-main-wrap{
- 
-
+.search-main-wrap {
 }
 @media screen and (max-width: 768px) {
-
   .dashboard {
     margin-top: 20px !important;
-   
+
     width: 100% !important;
-   
   }
   .header {
     display: none !important;
@@ -133,100 +120,70 @@
   }
 }
 
-
-
-.dashboard-chart{
+.dashboard-chart {
   border: 2px solid red;
   display: flex;
 }
 
 @media only screen and (max-width: 978px) {
-  
-
- 
-  .card-wrap{
-
-    border: 2px solid blue;
+  .card-wrap {
     display: flex;
-   flex-wrap: wrap;
- 
-justify-content: center;
- 
+    flex-wrap: wrap;
+
+    justify-content: center;
   }
   .card {
-
- 
-
-  
   }
 
-  .card-main-warp{
-  
-  
-    display:  flex;
+  .card-main-warp {
+    display: flex;
     flex-direction: row !important;
- flex-wrap: wrap;
- margin: 10px !important;
-
+    flex-wrap: wrap;
+    margin: 10px !important;
   }
 }
 
-
 @media only screen and (max-width: 881px) {
-  
-  .card-wrap{
-    
+  .card-wrap {
     display: flex;
     margin: auto;
     justify-content: center;
     align-items: center;
   }
 
-  .card-main-warp{
-
-    display:  flex;
+  .card-main-warp {
+    display: flex;
     flex-direction: row !important;
- flex-wrap: wrap;
- margin: 10px !important;
-
-
+    flex-wrap: wrap;
+    margin: 10px !important;
   }
 
-
-  .product-sell-wrap{
+  .product-sell-wrap {
     display: flex;
     flex-direction: column !important;
     justify-content: center;
     align-items: center;
-   
   }
 
-  .search-wrap{
+  .search-wrap {
     width: 100% !important;
     border: 2px solid red;
-    display:  flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
     padding: 0;
   }
 
-
-  .product-wrap{
+  .product-wrap {
     width: 100% !important;
-  
   }
-  .product-sell-wrap h3{
+  .product-sell-wrap h3 {
     width: 100% !important;
     text-align: center !important;
-   
   }
 
-
-
-  
-.search-main-wrap{
-  width: 100%;
-  
-}
+  .search-main-wrap {
+    width: 100%;
+  }
 }
